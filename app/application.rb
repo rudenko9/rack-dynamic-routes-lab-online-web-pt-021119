@@ -9,7 +9,7 @@ class Application
       @@item.each do |item|
       resp.write "#{item.price}"
     else 
-      
+      resp.write  "Item not found"
       
     else 
       resp.write  "Item not found"
