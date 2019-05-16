@@ -5,8 +5,10 @@ class Application
     resp = Rack::Response.new 
     req = Rack::Request.new(env)
     
-    if req.path=="/@@item"
-      resp.write "item price"
+    if req.path=(/item/)
+      @@item.each do |item|
+      resp.write "#{item.price}"
+    else 
       
       
     else 
