@@ -8,7 +8,8 @@ class Application
     if req.path=="/item"
       resp.write "item price"
       
-    else Item not found
+    else 
+      Item not found
       
       resp.write "Route not found"
       resp.status = 404
