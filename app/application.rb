@@ -1,12 +1,12 @@
 class Application
-  @@item = []
+  @@items = []
   
   def call(env)
     resp = Rack::Response.new 
     req = Rack::Request.new(env)
     
     if req.path==(/item/)
-      @@item.each do |item|
+      @@items.each do |item|
       resp.write "#{item.price}"
     end 
     elsif
