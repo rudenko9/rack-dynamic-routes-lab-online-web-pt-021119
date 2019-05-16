@@ -8,6 +8,7 @@ class Application
     if req.path=(/item/)
       @@item.each do |item|
       resp.write "#{item.price}"
+    end 
     else 
       resp.write  "Item not found"
       resp.status = 400
