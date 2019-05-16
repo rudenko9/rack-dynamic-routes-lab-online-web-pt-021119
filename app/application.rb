@@ -9,8 +9,7 @@ class Application
       resp.write "item price"
       
     else 
-      Item not found
-      
+      resp.write  "Item not found"
       resp.write "Route not found"
       resp.status = 404
     end 
