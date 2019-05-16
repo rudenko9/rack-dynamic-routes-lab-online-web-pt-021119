@@ -10,7 +10,7 @@ class Application
       resp.write "#{item.price}"
     else 
       resp.write  "Item not found"
-      
+      resp.status = 400
     else 
       resp.write  "Item not found"
       resp.write "Route not found"
